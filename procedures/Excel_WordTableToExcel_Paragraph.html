@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Transferring MS Word Table to Excel</title>
+   <link rel="stylesheet" href="../index.css">
+   <link rel="stylesheet" href="../skeleton.css">
+   <link rel="stylesheet" href="../normalize.css">
+   <link rel="stylesheet" href="./procedures.css">
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="./assets/images/Logo/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/Logo/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./assets/images/Logo/favicon/favicon-16x16.png">
+<link rel="manifest" href="./assets/images/Logo/favicon/site.webmanifest">
+
+   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<!----------Container---------->
+<div class="container">
+	<div class="row">
+		<div class="two-thirds column">
+			<div class="procedure">
+				<h2>
+					Transferring MS Word Table to Excel
+				</h2>
+				<h5>
+					The Issue:
+				</h5>
+				<p>
+When copying bulleted lists or multiple paragraphs from Microsoft Word into Excel, the bullet points are often lost or not displayed correctly. Excel does not natively preserve Word's formatting, especially for bullets and line breaks (paragraphs), resulting in plain text or multiple blank lines. This affects readability and consistency when transferring structured content into spreadsheet cells.
+				</p>
+				<ol>
+<!----------Procedure---------->
+<li>
+In MS Word
+	<ul>
+		<li>
+Press <code>Cntr + H</code> to open the find and replace dialog.
+		</li>
+		<li>
+Type <code> ^p </code> in the <code>Find what</code> field.  This selects the line break.
+		</li>
+		<li>
+Type <code> ~*~ </code> in the <code>Replace with</code> filed.
+		</li>
+		<li>
+Click <code>Replace All</code>
+		</li>
+		<li>
+Copy the table or cells
+		</li>
+	</ul>
+</li>
+
+<!---02--->
+<li>
+In Excel
+	<ul>
+		<li>
+Press <code>Shift + Cntr + V</code> to paste without formatting.
+		</li>
+		<li>
+Press <code>Cntr + H</code> to open the find and replace dialog. 
+		</li>
+		<li>
+Type <code> ~*~ </code> in the <code>Find what</code> field.
+		</li>
+		<li>
+Type <code> ^p </code> in the <code>Replace with</code> filed.  This inserts a line break character.
+		</li>
+		<li>
+Type <code> ~~ </code> in the <code>Find what</code> field.
+		</li>
+		<li>
+Delete all contents in the <code>Replace with</code> filed.
+		</li>
+		<li>
+Click <code>Replace All</code>
+		</li>
+	</ul>
+</li>
+				</ol>
+<!----------END Procedure---------->
+			</div class="procedure">
+		</div class="two-thirds column">
+	</div class="row">
+</div class="container">
+<!----------END Container---------->
+
+</body>
+</html>

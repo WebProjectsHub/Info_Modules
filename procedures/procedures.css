@@ -1,0 +1,17 @@
+button
+	{ margin:5px; }
+
+.ByTopics
+	{
+	display:flex;
+	flex-wrap:wrap;
+	}
+
+.ByTopics button
+	{ flex:1; }
+
+ol ul, ol ul ul, li ul
+	{ margin-top: 0.5rem; }
+
+
+
