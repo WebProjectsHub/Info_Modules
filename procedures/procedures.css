@@ -1,6 +1,27 @@
 button
 	{ margin:5px; }
 
+.button-primary
+	{
+	width:30%;
+	height:50px;
+	}
+
+#backLink
+	{
+	display:flex;
+	align-items:flex-end;
+	flex-direction:column;
+	}
+#backLink .button-primary
+	{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	text-wrap:wrap;
+	width:100%;
+	}
+
 .ByTopics
 	{
 	display:flex;
@@ -10,8 +31,27 @@ button
 .ByTopics button
 	{ flex:1; }
 
+
 ol ul, ol ul ul, li ul
 	{ margin-top: 0.5rem; }
 
 
-
+/* Larger than mobile */
+@media (min-width: 320px) 
+{
+.row
+	{
+	display:flex;
+	flex-wrap:nowrap;
+	}
+.one.column
+	{
+	width:60px;
+	margin-left:10px;
+	}
+#backLink .button-primary
+	{
+	font-size:0.8rem;
+	line-height:1.5;
+	}
+}
