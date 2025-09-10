@@ -1,0 +1,11 @@
+button
+	{ margin:5px; }
+
+.topics
+	{
+	display:flex;
+	flex-wrap:wrap;
+	}
+
+.topics button
+	{ flex:1; }
